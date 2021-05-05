@@ -1,8 +1,6 @@
-# Numeral - Templates
+# Web Dentino
 
-Hola! Este repositorio plantilla para maquetación de nuestras aplicaciones.
-
-Este repositorio está preparado para comenzar a desarrollar con HTML y SASS
+Repositorio de código de maquetado del mockup del sitio web de dentino
 
 ## Uso
 
