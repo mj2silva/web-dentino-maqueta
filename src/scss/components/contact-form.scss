@@ -1,0 +1,49 @@
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  &__body {
+    width: 100%;
+  }
+  &__element {
+    width: 100%;
+    & label {
+      display: none;
+    }
+    & :nth-child(2) {
+      width: 100%;
+      border-radius: 15px;
+      padding: .5rem .8rem;
+      box-sizing: border-box;
+      margin: .5rem 0;
+      border: none;
+      background-color: rgb(230, 230, 230);
+      outline: none;
+      &::placeholder {
+        font-weight: bold;
+        font-family: $montserrat;
+        font-size: .8rem;
+      }
+    }
+    &--textarea {
+      height: 6rem;
+    }
+  }
+  &__button button {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(79, 37, 158);
+    padding: .5rem;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      background-color: purple;
+    }
+  }
+}

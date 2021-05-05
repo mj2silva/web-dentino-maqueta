@@ -1,0 +1,49 @@
+{
+  "name": "nturing-layout-dev-server",
+  "version": "2.1.0",
+  "description": "Repositorio template para maquetado de aplicaciones web de Numeral Turing",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build:ghpages": "NODE_ENV=ghpages gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GENumeral/front-end-template-repo.git"
+  },
+  "keywords": [
+    "templates",
+    "html",
+    "dev-server",
+    "sass",
+    "sass-dev-server",
+    "sass-server",
+    "gulp-server",
+    "gulp-sass",
+    "css",
+    "front-end",
+    "frontend"
+  ],
+  "author": "Numeral Turing, Manuel Silva",
+  "license": "UNLICENSED",
+  "private": "true",
+  "bugs": {
+    "url": "https://github.com/GENumeral/front-templates/issues"
+  },
+  "homepage": "https://github.com/GENumeral/front-templates#readme",
+  "browserslist": [
+    "defaults"
+  ]
+}

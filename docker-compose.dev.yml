@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  dev-server:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: npm run dev
+    ports:
+      - 3000:3000
+      - 3001:3001
