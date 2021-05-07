@@ -11,18 +11,29 @@
   text-align: center;
   background-color: $cl-blue;
   &-container {
+    & > * {
+      background-color: $cl-blue;
+    }
+    &--white {
+      & > * {
+        background-color: $cl-white;
+      }
+    }
     position: relative;
     width: 60%;
     max-width: 50rem;
     min-width: 25rem;
     min-height: 10rem;
+    &--min {
+      min-height: 3rem;
+      margin-top: 4rem;
+    }
     &__end {
       top: 0;
       bottom: 0;
       position: absolute;
-      width: 15px;
-      height: 15px;
-      background-color: $cl-white;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       margin: auto;
     }
@@ -31,9 +42,8 @@
       bottom: 0;
       right: 0;
       position: absolute;
-      width: 15px;
-      height: 15px;
-      background-color: $cl-white;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       margin: auto;
     }
@@ -43,8 +53,7 @@
       top: 0;
       bottom: 0;
       width: 100%;
-      height: 5px;
-      background-color: $cl-white;
+      height: 2px;
     }
   }
 }
