@@ -4,12 +4,30 @@
 @import "./common/sizes.scss";
 
 // Componentes
-// @import "./components/template-page.scss";
-@import "./components/contact-form.scss";
-@import "./components/section.scss";
+@import "./components/header.scss";
 
 body {
-  font-family: $montserrat;
+  font-family: $avenirPro;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  position: absolute;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }

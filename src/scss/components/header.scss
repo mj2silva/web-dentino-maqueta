@@ -1,0 +1,271 @@
+@keyframes fadeIn {
+  0% {
+    display: flex;
+    left: 100%;
+  }
+  100% {
+    display: flex;
+    left: 0%;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    display: flex;
+    transform: translateX(0);
+  }
+  100% {
+    display: flex;
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes dropDown {
+  0% {
+    height: 0;
+    overflow-y: hidden;
+  }
+  100% {
+    height: 6rem;
+    overflow-y: hidden;
+  }
+}
+
+@keyframes dropDownClose {
+  0% {
+    height: 6rem;
+    overflow-y: hidden;
+  }
+  100% {
+    height: 0;
+    overflow-y: hidden;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0%;
+    font-size: 0rem;
+  }
+  100% {
+    opacity: 100%;
+    font-size: initial;
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: $cl-white;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: $headerHeight;
+  box-sizing: border-box;
+  z-index: 20;
+  @media screen and (max-width: $breakpoint-tablet) {
+    position: relative;
+  }
+  &__logo {
+    margin-left: 2em;
+    width: 10rem;
+    height: calc(#{$headerHeight} * 0.75);
+    position: relative;
+    & a:focus {
+      outline: none;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-left: 0em;
+    }
+  }
+  &__menu-icon {
+    display: none;
+    background-color: transparent;
+    color: $cl-blue;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: flex;
+      font-size: 2rem;
+    }
+  }
+  &__menu-close {
+    display: none;
+    background-color: transparent;
+    color: $cl-blue;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      font-size: 2rem;
+      align-self: flex-end;
+      margin: 1rem;
+    }
+  }
+}
+
+.navigation {
+  margin-right: 3rem;
+  @media screen and (max-width: $breakpoint-laptop) {
+    margin-right: 0;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    position: absolute;
+    width: 100%;
+    animation: fadeOut ease .5s;
+  }
+  &__list {
+    display: flex;
+    color: $cl-blue;
+    font-family: $avenirDemi;
+    @media screen and (max-width: $breakpoint-tablet) {
+      height: 100vh;
+      padding: 0;
+      position: fixed;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $cl-white;
+      color: $cl-blue;
+      min-height: 100vh;
+      left: -1rem;
+      right: -1rem;
+      top: -1rem;
+      width: 100%;
+      padding: 1rem;
+      z-index: 30;
+    }
+    &--hidden {
+      @media screen and (max-width: $breakpoint-tablet) {
+        position: fixed;
+        left: -1rem;
+        right: -1rem;
+        top: -1rem;
+        animation: fadeOut ease .5s;
+        transform: translateX(100vw);
+        overflow: hidden;
+        color: $cl-blue;
+        min-height: 100vh;
+        height: 100vh;
+        padding: 1rem;
+        width: 100%;
+      }
+    }
+    &--mobile {
+      @media screen and (max-width: $breakpoint-tablet) {
+        height: 100vh;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $cl-blue;
+        overflow: hidden;
+        color: $cl-white;
+        min-height: 100vh;
+        left: -1rem;
+        right: -1rem;
+        top: -1rem;
+        width: 100%;
+        padding: 1rem;
+        z-index: 30;
+        animation: fadeIn ease .5s;
+        & > li {
+          margin: 1rem 0;
+        }
+    }
+  }
+  }
+  &__item {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    padding: 1rem;
+    font-size: 1.1rem;
+    & button {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      font-size: inherit;
+      font-family: inherit;
+      color: inherit;
+      position: relative;
+      cursor: pointer;
+    }
+    & a {
+      padding: 1rem;
+      margin: -1rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__dropdown {
+    position: relative;
+    box-sizing: border-box;
+    &-list {
+      display: none;
+      border-radius: 9.19px;
+      margin-top: .8em;
+      position: absolute;
+      background-color: $cl-white;
+      color: $cl-blue;
+      flex-direction: column;
+      padding: .5em 0;
+      width: 8em;
+      top: 2.5rem;
+      left: 0;
+      font-size: 1.1rem;
+      @media screen and (max-width: $breakpoint-mobile) {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        top: 0rem;
+      }
+    }
+    &-item {
+      font-size: .9em;
+      font-weight: 900;
+      padding: .8em;
+      list-style: none;
+      &:hover {
+        color: $cl-skyblue;
+      }
+      & a:focus {
+        outline: none;
+      }
+      @media screen and (max-width: $breakpoint-mobile) {
+        margin: 0;
+      }
+    }
+  }
+  &__dropdown:hover &__dropdown-list {
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: block;
+      z-index: 40;
+      animation: dropDown ease 1s;
+    }
+  }
+  &__dropdown--open {
+    @media screen and (max-width: $breakpoint-tablet) {
+    display: block;
+    z-index: 40;
+    height: 6rem;
+    animation: dropDown ease 1s;
+    }
+  }
+  &__dropdown--closed {
+    @media screen and (max-width: $breakpoint-tablet) {
+    display: block;
+    z-index: 40;
+    overflow-y: hidden;
+    height: 0;
+    animation: dropDownClose ease 1s;
+    }
+  }
+}

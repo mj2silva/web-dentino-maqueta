@@ -1,7 +1,7 @@
 {
   "name": "nturing-layout-dev-server",
   "version": "2.1.0",
-  "description": "Repositorio template para maquetado de aplicaciones web de Numeral Turing",
+  "description": "Maquetado del sitio web de dentino",
   "main": "index.js",
   "devDependencies": {
     "@babel/core": "^7.11.1",

@@ -1,3 +1,31 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap';
 
-$montserrat: 'Montserrat', sans-serif;
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  src: url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+       url('../fonts/AvenirNextLTPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'AvenirNextLTPro Demi';
+  src: url('../fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
+       url('../fonts/AvenirNextLTPro-Demi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirNextLTPro';
+  src: url('../fonts/AvenirNextLTPro-Demi-Regular.woff2') format('woff2'),
+       url('../fonts/AvenirNextLTPro-Demi-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+$avenirPro: 'AvenirNextLtPro', Arial, sans-serif;
+$avenirDemi: 'AvenirNextLtPro Demi', Arial, sans-serif;
