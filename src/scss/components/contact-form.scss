@@ -1,0 +1,10 @@
+.contact-form {
+  background-color: $cl-gray;
+  &__form {
+    width: 80%;
+  }
+  &__title {
+    color: $cl-blue;
+    background-color: $cl-gray;
+  }
+}

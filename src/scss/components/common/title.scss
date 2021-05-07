@@ -9,7 +9,6 @@
   width: 15rem;
   height: 2rem;
   text-align: center;
-  background-color: $cl-blue;
   &-container {
     & > * {
       background-color: $cl-blue;
@@ -18,6 +17,9 @@
       & > * {
         background-color: $cl-white;
       }
+    }
+    & .title {
+      background-color: inherit;
     }
     position: relative;
     width: 60%;

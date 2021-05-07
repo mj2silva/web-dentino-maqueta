@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__label {
+    display: none;
+  }
+  &__input {
+    padding: .5rem .8rem;
+    border-radius: 8px;
+    border: solid 1px $cl-green;
+    margin: .5rem 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    &::placeholder {
+      font-family: $avenirPro ;
+    }
+  }
+  &__button {
+    width: fit-content;
+    min-width: 10rem;
+    background-color: $cl-green;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+}

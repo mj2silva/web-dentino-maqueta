@@ -9,8 +9,10 @@
     border: 2px solid $cl-white;
     padding: .8rem .9rem;
     border-radius: 30px;
-    background-color: $cl-blue;
     font-size: 1.5rem;
+    &-container {
+      background-color: $cl-blue;
+    }
   }
   &__items {
     display: flex;
