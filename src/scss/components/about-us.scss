@@ -1,0 +1,121 @@
+.about-us {
+  position: relative;
+  &__image {
+    position: relative;
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  &__owner-name {
+    position: absolute;
+    bottom: 0;
+    background-color: $cl-skyblue;
+    color: $cl-white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  &__content {
+    width: 70%;
+    margin: 0;
+    color: $cl-blue;
+    align-self: flex-start;
+  }
+  &__title {
+    & h2 {
+      font-family: $avenirPro;
+      font-size: 2.5rem;
+    }
+  }
+  &__parragraph {
+    font-family: $avenirPro;
+    font-weight: 500;
+    font-size: 1.1rem;
+    width: 90%;
+  }
+  &__strengths {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__strength-icon {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+  }
+  &__strength-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__strength-description {
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 1.8rem;
+    & span {
+      display: block;
+      font-size: .8rem;
+      font-weight: normal;
+    }
+  }
+  // Media Query
+  @media screen and (max-width: $breakpoint-desktop ) {
+    &__parragraph {
+      font-size: 1.1rem;
+    }
+    &__image {
+      transform: scale(0.9);
+    }
+    &__content {
+      align-self: initial;
+    }
+  }
+  @media screen and (max-width: $breakpoint-laptop) {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 4rem;
+    background-position: 3% 95%, 92% 5%;
+    background-size: 10%, 10%;
+    &__content {
+      width: 50%;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 3rem;
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    min-height: 0;
+    &__image {
+      transform: scale(0.7);
+    }
+  }
+  @media screen and (max-width: $breakpoint-tablet){
+    width: 100%;
+    &__image {
+      transform: scale(0.8);
+      margin: -2rem 0 -3rem 0;
+    }
+    &__title {
+      & h2 {
+        margin-top: 0;
+      }
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile){
+    &__image {
+      transform: scale(0.7);
+    }
+    &__content {
+      width: 85%;
+    }
+  }
+}

@@ -3,8 +3,14 @@
 @import "./common/colors.scss";
 @import "./common/sizes.scss";
 
+// Commons
+@import "./components/common/button.scss";
+
 // Componentes
 @import "./components/header.scss";
+@import "./components/section.scss";
+@import "./components/presentation.scss";
+@import "./components/about-us.scss";
 
 body {
   font-family: $avenirPro;
@@ -30,4 +36,8 @@ img {
   object-position: center;
   width: 100%;
   height: 100%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  bottom: 0;
 }

@@ -1,0 +1,86 @@
+.presentation {
+  position: relative;
+  background-color: $cl-skyblue;
+  color: #ffffff;
+  background-image: url('/img/slider-izquierda.png'), url('/img/derecha-slider.png');
+  background-size: 12%, 20%;
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat;
+
+  &__call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 800;
+    text-align: end;
+    max-width: 80%;
+    margin: 2rem auto 3rem auto;
+    font-family: $avenirPro;
+    @media screen and (max-width: $breakpoint-laptop){
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__message {
+    cursor: default;
+    font-size: 2.6rem;
+    margin: 1rem 0;
+    @media screen and (max-width: $breakpoint-desktop){
+      font-size: 2.2rem;
+    }
+    @media screen and (max-width: $breakpoint-laptop){
+      text-align: center;
+    }
+    @media screen and (max-width: $breakpoint-mobile){
+      font-size: 1.8rem;
+    }
+  }
+
+  &__description {
+    display: block;
+    font-size: 2rem;
+  }
+
+  &__button {
+    max-width: 75%;
+    font-size: 1rem;
+    border: 2px solid $cl-white;
+    border-radius: 30px;
+    @media screen and (max-width: $breakpoint-desktop){
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: $breakpoint-laptop){
+      font-size: 1.4rem;
+      display: block;
+      min-width: 15rem;
+    }
+    @media screen and (max-width: $breakpoint-mobile){
+      font-size: 1.2rem;
+      min-width: 10rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+    margin: 0 auto;
+    max-width: 65%;
+    width: 80%;
+    min-height: 25rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: $breakpoint-laptop) {
+      height: max-content;
+      max-width: 50%;
+    }
+    @media screen and (max-width: $breakpoint-tablet) {
+      max-width: 80%;
+      padding: 0 2rem 2rem 2rem;
+    }
+  }
+  @media screen and (max-width: $breakpoint-laptop) {
+    min-height: 42rem;
+  }
+}
