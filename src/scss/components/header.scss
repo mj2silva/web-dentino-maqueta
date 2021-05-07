@@ -71,7 +71,7 @@
   &__logo {
     margin-left: 2em;
     width: 10rem;
-    height: calc(#{$headerHeight} * 0.75);
+    height: calc(#{$headerHeight} * 0.55);
     position: relative;
     & a:focus {
       outline: none;
