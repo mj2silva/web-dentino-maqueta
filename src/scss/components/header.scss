@@ -139,8 +139,8 @@
     &--hidden {
       @media screen and (max-width: $breakpoint-tablet) {
         position: fixed;
-        left: -1rem;
-        right: -1rem;
+        left: 0rem;
+        right: 3rem;
         top: -1rem;
         animation: fadeOut ease .5s;
         transform: translateX(100vw);
@@ -160,9 +160,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: $cl-blue;
+        background-color: $cl-white;
         overflow: hidden;
-        color: $cl-white;
+        color: $cl-blue;
         min-height: 100vh;
         left: -1rem;
         right: -1rem;
@@ -171,9 +171,6 @@
         padding: 1rem;
         z-index: 30;
         animation: fadeIn ease .5s;
-        & > li {
-          margin: 1rem 0;
-        }
     }
   }
   }

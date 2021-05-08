@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/global.css">
   <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/b02b8397bc.js" crossorigin="anonymous"></script>
+  <script defer src="js/toggleMenu.js"></script>
 </head>
 <body>
   <header class="header">
@@ -14,14 +15,16 @@
       <img class="image" src="assets/img/logo-dentino.png" alt="Logo Dentino" />
     </div>
     <button
-        type="button"
-        class="header__menu-icon"
-      >
+      id="btnOpenMenu"
+      type="button"
+      class="header__menu-icon"
+    >
       <i class="fas fa-bars"></i>
     </button>
     <div class="navigation">
-      <ul class="navigation__list">
+      <ul id="mainMenu" class="navigation__list navigation__list--mobile">
         <button
+          id="btnCloseMenu"
           type="button"
           class="header__menu-close"
         >
