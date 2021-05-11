@@ -17,15 +17,19 @@
     font-weight: bold;
   }
   &__list-item {
-    margin: 1.2rem 0;
+    margin: .5rem 0;
     font-size: 1.1rem;
     padding: 0;
     list-style: none;
     & span {
+      height: 1.2rem;
+      width: 1.2rem;
       margin-right: 1rem;
       background-color: $cl-skyblue;
       padding: .4rem;
       border-radius: 50%;
+      text-align: center;
+      display: inline-block;
     }
   }
   &__list {

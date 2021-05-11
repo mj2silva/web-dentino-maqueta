@@ -1,11 +1,19 @@
 .contact-form {
   background-color: $cl-gray;
+  &__image {
+    width: 24rem;
+  }
   &__form {
     width: 80%;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
   }
   &__title {
     color: $cl-blue;
     background-color: $cl-gray;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__image {
+      display: none;
+    }
   }
 }

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template repository</title>
+  <title>Dentino | Mejorando Sonrisas</title>
   <link rel="stylesheet" href="css/global.css">
-  <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/b02b8397bc.js" crossorigin="anonymous"></script>
   <script defer src="js/toggleMenu.js"></script>
 </head>
@@ -22,7 +22,7 @@
       <i class="fas fa-bars"></i>
     </button>
     <div class="navigation">
-      <ul id="mainMenu" class="navigation__list navigation__list--mobile">
+      <ul id="mainMenu" class="navigation__list navigation__list--hidden">
         <button
           id="btnCloseMenu"
           type="button"
@@ -283,7 +283,7 @@
     </div>
   </div>
   <div class="section__column">
-    <div class="image about-us__image">
+    <div class="image contact-form__image">
       <img src="assets/img/doctor2.png" alt="Imagen de presentación de Dentino">
     </div>
   </div>
@@ -292,9 +292,9 @@
         <label class="form__label">Nombre y apellidos</label>
         <input class="form__input" placeholder="Nombre y apellidos" type="text" name="names">
         <label class="form__label">Email</label>
-        <input class="form__input" placeholder="Email" type="text" name="email">
+        <input class="form__input" placeholder="Email" type="email" name="email">
         <label class="form__label">Teléfono</label>
-        <input class="form__input" placeholder="Teléfono" type="text" name="phone">
+        <input class="form__input" placeholder="Teléfono" type="tel" name="phone">
         <label class="form__label">Escriba su consulta</label>
         <textarea class="form__input" placeholder="Escriba su consulta" name="message" rows="4"></textarea>
         <button class="button form__button" type="submit">ENVIAR</button>

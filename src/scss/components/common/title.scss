@@ -9,6 +9,7 @@
   width: 15rem;
   height: 2rem;
   text-align: center;
+  font-size: 1.5rem;
   &-container {
     & > * {
       background-color: $cl-blue;
@@ -57,5 +58,10 @@
       width: 100%;
       height: 2px;
     }
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    font-size: 1.2rem;
+    height: 1.5rem;
+    width: 10rem;
   }
 }
