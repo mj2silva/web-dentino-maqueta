@@ -129,18 +129,18 @@
 @-webkit-keyframes fadeIn {
   0% {
     display: flex;
-    left: 100%; }
+    transform: translateX(100vw); }
   100% {
     display: flex;
-    left: 0%; } }
+    transform: translateX(0); } }
 
 @keyframes fadeIn {
   0% {
     display: flex;
-    left: 100%; }
+    transform: translateX(100vw); }
   100% {
     display: flex;
-    left: 0%; } }
+    transform: translateX(0); } }
 
 @-webkit-keyframes fadeOut {
   0% {
@@ -263,8 +263,8 @@
     .navigation {
       position: absolute;
       width: 100%;
-      -webkit-animation: fadeOut ease .5s;
-      animation: fadeOut ease .5s; } }
+      -webkit-animation: fadeOut linear .5s;
+      animation: fadeOut linear .5s; } }
   .navigation__list {
     display: flex;
     color: #005797;
@@ -292,8 +292,8 @@
         left: 0rem;
         right: 3rem;
         top: -1rem;
-        -webkit-animation: fadeOut ease .5s;
-        animation: fadeOut ease .5s;
+        -webkit-animation: fadeOut linear .3s;
+        animation: fadeOut linear .3s;
         transform: translateX(100vw);
         overflow: hidden;
         color: #005797;
@@ -319,8 +319,8 @@
         width: 100%;
         padding: 1rem;
         z-index: 30;
-        -webkit-animation: fadeIn ease .5s;
-        animation: fadeIn ease .5s; } }
+        -webkit-animation: fadeIn linear .3s;
+        animation: fadeIn linear .3s; } }
   .navigation__item {
     list-style: none;
     cursor: pointer;
@@ -608,12 +608,14 @@
   .about-us__strengths {
     margin-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: center; }
   .about-us__strength-icon {
     position: relative;
-    width: 4rem;
-    height: 4rem; }
+    width: 12rem;
+    height: 4rem;
+    margin: 1rem auto; }
   .about-us__strength-item {
     position: relative;
     display: flex;
