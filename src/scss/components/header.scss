@@ -1,11 +1,11 @@
 @keyframes fadeIn {
   0% {
     display: flex;
-    left: 100%;
+    transform: translateX(100vw);
   }
   100% {
     display: flex;
-    left: 0%;
+    transform: translateX(0);
   }
 }
 
@@ -113,7 +113,7 @@
   @media screen and (max-width: $breakpoint-tablet) {
     position: absolute;
     width: 100%;
-    animation: fadeOut ease .5s;
+    animation: fadeOut linear .5s;
   }
   &__list {
     display: flex;
@@ -142,7 +142,7 @@
         left: 0rem;
         right: 3rem;
         top: -1rem;
-        animation: fadeOut ease .5s;
+        animation: fadeOut linear .3s;
         transform: translateX(100vw);
         overflow: hidden;
         color: $cl-blue;
@@ -170,7 +170,7 @@
         width: 100%;
         padding: 1rem;
         z-index: 30;
-        animation: fadeIn ease .5s;
+        animation: fadeIn linear .3s;
     }
   }
   }
