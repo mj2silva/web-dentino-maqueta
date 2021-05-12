@@ -40,13 +40,15 @@
   &__strengths {
     margin-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   &__strength-icon {
     position: relative;
-    width: 4rem;
+    width: 12rem;
     height: 4rem;
+    margin: 1rem auto;
   }
   &__strength-item {
     position: relative;
