@@ -1,6 +1,6 @@
 .section {
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   min-height: calc(100vh - #{$headerHeight});
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
   background-color: $cl-blue;
+  overflow: hidden;
+  width: 100%;
   &__message {
     width: 70%;
     text-align: center;
@@ -11,7 +13,7 @@
     color: $cl-white;
   }
   &__action {
-    min-width: 30%;
+    min-width: 25%;
     margin: 2rem 1rem;
   }
   &__button {
