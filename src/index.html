@@ -4,10 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dentino | Mejorando Sonrisas</title>
-  <link rel="stylesheet" href="css/global.css">
   <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/b02b8397bc.js" crossorigin="anonymous"></script>
-  <script defer src="js/toggleMenu.js"></script>
+  <!-- The core Firebase JS SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyArvXAou1wdX2sQNQLqhZD9SBWiUxjbdgA",
+      authDomain: "dentino-web.firebaseapp.com",
+      projectId: "dentino-web",
+      storageBucket: "dentino-web.appspot.com",
+      messagingSenderId: "200524047422",
+      appId: "1:200524047422:web:1aa6f9958a256203019d6f",
+      measurementId: "G-X177X5LRXL"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </head>
 <body>
   <header class="header">
@@ -288,7 +304,7 @@
     </div>
   </div>
   <div class="section__column">
-      <form class="form contact-form__form">
+      <form id="contactForm" class="form contact-form__form">
         <label class="form__label">Nombre y apellidos</label>
         <input class="form__input" placeholder="Nombre y apellidos" type="text" name="names">
         <label class="form__label">Email</label>

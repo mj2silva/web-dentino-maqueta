@@ -2,11 +2,6 @@
   position: relative;
   background-color: $cl-skyblue;
   color: #ffffff;
-  background-image: url('/img/slider-izquierda.png'), url('/img/derecha-slider.png');
-  background-size: 12%, 20%;
-  background-position: bottom left, bottom right;
-  background-repeat: no-repeat;
-
   &__call-to-action {
     display: flex;
     flex-direction: column;
