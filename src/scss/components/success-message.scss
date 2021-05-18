@@ -1,0 +1,11 @@
+.success-message {
+  color: $cl-green;
+  font-size: 5rem;
+  text-align: center;
+  &__message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+  }
+}

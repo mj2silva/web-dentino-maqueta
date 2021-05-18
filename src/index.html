@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dentino | Mejorando Sonrisas</title>
   <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/b02b8397bc.js" crossorigin="anonymous"></script>
-  <!-- The core Firebase JS SDK -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+  <script src="https://kit.fontawesome.com/15f1ec3d17.js" crossorigin="anonymous"></script>
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyArvXAou1wdX2sQNQLqhZD9SBWiUxjbdgA",
@@ -47,32 +43,33 @@
           <i class="fas fa-times"></i>
         </button>
         <li class="navigation__item">
-          <a href="/#link">Nosotros</a>
+          <a href="/#nosotros">Nosotros</a>
         </li>
         <li class="navigation__item">
-          <a href="/#link">Especialidades</a>
+          <a href="/#especialidades">Especialidades</a>
         </li>
         <li class="navigation__item">
-          <a href="/#link">Sedes</a>
+          <a href="/#sedes">Sedes</a>
         </li>
         <li class="navigation__item">
-          <a href="/#link">Testimonios</a>
+          <a href="/#testimonios">Testimonios</a>
         </li>
         <li class="navigation__item">
-          <a href="/#link">Contáctanos</a>
+          <a href="/#contacto">Contáctanos</a>
         </li>
       </ul>
     </div>
   </header>
   <main>
     <section class="section presentation">
+      <div id="presentation" class="target"></div>
       <div class="section__column">
         <div class="presentation__call-to-action">
           <h1 class="presentation__message">
             SOMOS DENTINO
             <span class="presentation__description">NUESTRO PROPÓSITO ES SEGUIR MEJORANDO SONRISAS</span>
           </h1>
-          <a href="/#consulta" class="button presentation__button">HAZ UNA CONSULTA</a>
+          <a href="/#contacto" class="button presentation__button">HAZ UNA CONSULTA</a>
         </div>
       </div>
       <div class="section__column">
@@ -89,6 +86,7 @@
         </div>
       </div>
       <div class="section__column">
+        <div id="nosotros" class="target"></div>
         <div class="about-us__content">
           <div class="appear_right about-us__title">
             <h2>Sobre Dentino...</h2>
@@ -130,6 +128,7 @@
       </div>
     </section>
     <section class="section specialties">
+      <div id="especialidades" class="target"></div>
         <div class="title-container title-container--white specialties__title-container">
           <div class="title-container__end"></div>
           <div class="title-container__bar">
@@ -145,6 +144,10 @@
               </div>
             </div>
             <div class="specialties__name">Blanqueamiento</div>
+            <div class="specialties__item-decorator specialties__decorator">
+                <div class="specialties__decorator-circle-1"></div>
+                <div class="specialties__decorator-circle-2"></div>
+              </div>
           </div>
           <div class="specialties__item">
             <div class="specialties__logo-container">
@@ -153,13 +156,21 @@
                 </div>
               </div>
               <div class="specialties__name">Extracciones</div>
+              <div class="specialties__item-decorator specialties__decorator">
+                <div class="specialties__decorator-circle-1"></div>
+                <div class="specialties__decorator-circle-2"></div>
+              </div>
             </div>
             <div class="specialties__item">
               <div class="specialties__logo-container">
                 <div class="specialties__logo">
                   <img src="assets/img/extracciones.png" alt="Blanqueamiento">
                 </div>
-            </div>
+              </div>
+              <div class="specialties__item-decorator specialties__decorator">
+                <div class="specialties__decorator-circle-1"></div>
+                <div class="specialties__decorator-circle-2"></div>
+              </div>
             <div class="specialties__name">Diseño de sonrisa</div>
           </div>
           <div class="specialties__item">
@@ -169,6 +180,10 @@
                 </div>
             </div>
             <div class="specialties__name">Implantes</div>
+            <div class="specialties__item-decorator specialties__decorator">
+                <div class="specialties__decorator-circle-1"></div>
+                <div class="specialties__decorator-circle-2"></div>
+              </div>
           </div>
           <div class="specialties__item">
             <div class="specialties__logo-container">
@@ -177,6 +192,10 @@
                 </div>
               </div>
               <div class="specialties__name">Prótesis dental</div>
+              <div class="specialties__item-decorator specialties__decorator">
+                <div class="specialties__decorator-circle-1"></div>
+                <div class="specialties__decorator-circle-2"></div>
+              </div>
             </div>
             <div class="specialties__item">
               <div class="specialties__logo-container">
@@ -185,6 +204,10 @@
                 </div>
               </div>
               <div class="specialties__name">Ortodoncia</div>
+              <div class="specialties__item-decorator specialties__decorator">
+                <div class="specialties__decorator-circle-1"></div>
+                <div class="specialties__decorator-circle-2"></div>
+              </div>
             </div>
             <div class="specialties__item">
               <div class="specialties__logo-container">
@@ -193,11 +216,16 @@
                 </div>
             </div>
             <div class="specialties__name">Endodoncia</div>
+            <div class="specialties__item-decorator specialties__decorator">
+                <div class="specialties__decorator-circle-1"></div>
+                <div class="specialties__decorator-circle-2"></div>
+              </div>
           </div>
         </div>
       </div>
     </section>
     <section class="section branches">
+      <div id="sedes" class="target"></div>
       <div class="title-container title-container--min branches__title-container">
         <div class="title-container__end"></div>
         <div class="title-container__bar">
@@ -241,10 +269,11 @@
       <h2>¡Que tu salud no espere más!</h2>
     </div>
     <div class="call-to-action__action">
-      <button type="button" class="button call-to-action__button">AGENDAR CONSULTA AQUÍ</button>
+      <a href="#contacto" class="button call-to-action__button">AGENDAR CONSULTA AQUÍ</a>
     </div>
   </section>
   <section class="section customer-stories">
+    <div id="testimonios" class="target"></div>
     <div class="title-container title-container--min customer-stories__title-container">
       <div class="title-container__end"></div>
       <div class="title-container__bar">
@@ -289,6 +318,7 @@
   </div>
 </section>
 <section class="section section--with-title contact-form">
+  <div id="contacto" class="target"></div>
   <div class="section__column section__column--title">
     <div class="title-container title-container--min contact-form__title">
       <div class="title-container__end"></div>
@@ -325,12 +355,16 @@
       <div class="footer__section-content">
         <ul class="footer__list">
           <li class="footer__list-item">
-            <span class="footer__icon"><i class="fas fa-phone-alt"></i></span>
-            978 882 148
+            <a href="tel:+51978882148">
+              <span class="footer__icon"><i class="fas fa-phone-alt"></i></span>
+              978 882 148
+            </a>
           </li>
           <li class="footer__list-item">
-            <span class="footer__icon"><i class="fas fa-envelope"></i></span>
-            dentinotrujillo@gmail.com
+            <a href="mailto:dentinotrujillo@gmail.com">
+              <span class="footer__icon"><i class="fas fa-envelope"></i></span>
+              dentinotrujillo@gmail.com
+            </a>
           </li>
         </ul>
       </div>
@@ -340,20 +374,28 @@
       <div class="footer__section-content">
         <ul class="footer__list">
           <li class="footer__list-item">
-            <span class="footer__icon"><i class="fab fa-facebook-f"></i></span>
-            /denaldentino
+            <a target="_blank" rel="nofollow" href="https://www.facebook.com/dentaldentino">
+              <span class="footer__icon"><i class="fab fa-facebook-f"></i></span>
+              /dentaldentino
+            </a>
           </li>
           <li class="footer__list-item">
-            <span class="footer__icon"><i class="fab fa-instagram"></i></i></span>
-            @dental_dentino
+            <a target="_blank" rel="nofollow" href="https://www.instagram.com/dental_dentino/?hl=es-la">
+              <span class="footer__icon"><i class="fab fa-instagram"></i></i></span>
+              @dental_dentino
+            </a>
+          </li>
+          <li class="footer__list-item">            
+            <a target="_blank" rel="nofollow" href="https://www.tiktok.com/@dental_dentino_?lang=es">
+              <span class="footer__icon"><i class="fab fa-tiktok"></i></i></span>
+              @dental_dentino
+            </a>
           </li>
           <li class="footer__list-item">
-            <span class="footer__icon"><i class="fab fa-tiktok"></i></i></span>
-            @dental_dentino
-          </li>
-          <li class="footer__list-item">
-            <span class="footer__icon"><i class="fab fa-youtube"></i></i></span>
-            DENTAL_DENTINO
+            <a target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UCEUNAUkr4hlkhuYf8KodUyw">
+              <span class="footer__icon"><i class="fab fa-youtube"></i></i></span>
+              DENTAL_DENTINO
+            </a>
           </li>
         </ul>
       </div>
@@ -363,16 +405,22 @@
       <div class="footer__section-content">
         <ul class="footer__list">
           <li class="footer__list-item">
-            <span class="footer__icon"><i class="fas fa-map-marker-alt"></i></span>
-            Los Pinos
+            <a target="_blank" rel="nofollow" href="https://goo.gl/maps/DvmT4UtgvEEvVLou5">
+              <span class="footer__icon"><i class="fas fa-map-marker-alt"></i></span>
+              Los Pinos
+            </a>
           </li>
           <li class="footer__list-item">
-            <span class="footer__icon"><i class="fas fa-map-marker-alt"></i></span>
-            Primavera
+            <a target="_blank" rel="nofollow" href="https://goo.gl/maps/qE6Qdv4Dxrxgd2yM7">
+              <span class="footer__icon"><i class="fas fa-map-marker-alt"></i></span>
+              Primavera
+            </a>
           </li>
           <li class="footer__list-item">
-            <span class="footer__icon"><i class="fas fa-map-marker-alt"></i></span>
-            Huanchaco
+            <a target="_blank" rel="nofollow" href="https://goo.gl/maps/PTXJ7P4gBd2Tk8uVA">
+              <span class="footer__icon"><i class="fas fa-map-marker-alt"></i></span>
+              Huanchaco
+            </a>
           </li>
         </ul>
       </div>

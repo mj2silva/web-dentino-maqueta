@@ -1,5 +1,6 @@
 .section {
   overflow: hidden;
+  position: relative;
   width: 100%;
   min-height: calc(100vh - #{$headerHeight});
   display: grid;

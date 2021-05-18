@@ -27,6 +27,31 @@
     height: 8rem;
     margin: 2rem 2rem;
   }
+  &__item-decorator {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__decorator {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    & * {
+      margin: 0 .2rem;
+    }
+    &-circle-1 {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: $cl-green;
+    }
+    &-circle-2 {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: $cl-green;
+    }
+  }
   &__logo {
     position: relative;
     display: flex;

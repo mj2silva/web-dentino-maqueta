@@ -10,6 +10,7 @@
 @import "./components/common/spinner";
 
 // Componentes
+@import "./components/success-message";
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./components/section.scss";
@@ -25,6 +26,10 @@ body {
   font-family: $avenirPro;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -56,4 +61,10 @@ img {
   bottom: 0;
   display: block;
   inset: 0px;
+}
+
+.target {
+  position: absolute;
+  top: 0;
+  margin-top: -$headerHeight;
 }

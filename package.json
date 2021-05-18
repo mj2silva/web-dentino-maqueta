@@ -55,5 +55,8 @@
   "homepage": "https://github.com/GENumeral/front-templates#readme",
   "browserslist": [
     "defaults"
-  ]
+  ],
+  "dependencies": {
+    "firebase": "^8.6.1"
+  }
 }
