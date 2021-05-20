@@ -181,6 +181,12 @@
     position: relative;
     padding: 1rem;
     font-size: 1.1rem;
+    &--active a {
+      color: $cl-skyblue;
+    }
+    & a:hover {
+      color: $cl-skyblue;
+    }
     & button {
       display: inline-block;
       height: 100%;

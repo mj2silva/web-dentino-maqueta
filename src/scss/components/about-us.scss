@@ -21,7 +21,7 @@
   }
   &__content {
     width: 70%;
-    margin: 0;
+    margin: 3rem auto;
     color: $cl-blue;
     align-self: flex-start;
   }
@@ -36,6 +36,7 @@
     font-weight: 500;
     font-size: 1.1rem;
     width: 90%;
+    text-align: justify;
   }
   &__strengths {
     margin-top: 2rem;
@@ -46,7 +47,7 @@
   }
   &__strength-icon {
     position: relative;
-    width: 12rem;
+    width: 9rem;
     height: 4rem;
     margin: 1rem auto;
   }
@@ -55,6 +56,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem 0
   }
   &__strength-description {
     display: block;
@@ -91,7 +93,7 @@
       width: 50%;
       text-align: center;
       font-size: 1.5rem;
-      margin-top: 3rem;
+      margin: 3rem auto 0 auto;
     }
   }
   @media screen and (max-width: $breakpoint-mobile) {
@@ -111,13 +113,13 @@
         margin-top: 0;
       }
     }
+    &__content {
+      width: 85%;
+    }
   }
   @media screen and (max-width: $breakpoint-mobile){
     &__image {
       transform: scale(0.7);
-    }
-    &__content {
-      width: 85%;
     }
   }
 }
