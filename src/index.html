@@ -21,7 +21,7 @@
     firebase.analytics();
   </script>
 </head>
-<body>
+<body id="main">
   <header class="header">
     <div class="header__logo">
       <img class="image" src="assets/img/logo-dentino.png" alt="Logo Dentino" />
@@ -42,31 +42,31 @@
         >
           <i class="fas fa-times"></i>
         </button>
-        <li class="navigation__item">
+        <li id="linknosotros" class="navigation__item">
           <a href="#nosotros">Nosotros</a>
         </li>
-        <li class="navigation__item">
+        <li id="linkespecialidades" class="navigation__item">
           <a href="#especialidades">Especialidades</a>
         </li>
-        <li class="navigation__item">
+        <li id="linksedes" class="navigation__item">
           <a href="#sedes">Sedes</a>
         </li>
-        <li class="navigation__item">
+        <li id="linktestimonios" class="navigation__item">
           <a href="#testimonios">Testimonios</a>
         </li>
-        <li class="navigation__item">
+        <li id="linkcontacto" class="navigation__item">
           <a href="#contacto">Contáctanos</a>
         </li>
       </ul>
     </div>
   </header>
   <main>
-    <section class="section presentation">
+    <section class="section section--reversable presentation">
       <div id="presentation" class="target"></div>
       <div class="section__column">
         <div class="presentation__call-to-action">
           <h1 class="presentation__message">
-            SOMOS DENTINO
+            ¡SOMOS DENTINO!
             <span class="presentation__description">NUESTRO PROPÓSITO ES SEGUIR MEJORANDO SONRISAS</span>
           </h1>
           <a href="#contacto" class="button presentation__button">HAZ UNA CONSULTA</a>
@@ -85,7 +85,7 @@
           <div class="about-us__owner-name">DR ALBERTÍN RÍOS</div>
         </div>
       </div>
-      <div class="section__column">
+      <div cla id="aboutUs"ss="section__column">
         <div id="nosotros" class="target"></div>
         <div class="about-us__content">
           <div class="appear_right about-us__title">
@@ -127,7 +127,7 @@
         </div>
       </div>
     </section>
-    <section class="section specialties">
+    <section id="specialties" class="section specialties">
       <div id="especialidades" class="target"></div>
         <div class="title-container title-container--white specialties__title-container">
           <div class="title-container__end"></div>
@@ -224,7 +224,7 @@
         </div>
       </div>
     </section>
-    <section class="section branches">
+    <section id="branches" class="section branches">
       <div id="sedes" class="target"></div>
       <div class="title-container title-container--min branches__title-container">
         <div class="title-container__end"></div>
@@ -240,8 +240,8 @@
               <img src="assets/img/sedes.png" alt="Sede primavera">
             </div>
           </div>
-          <div class="branches__name">Sede Primavera <span>Av. Los pinos 345</span></div>
-          <a class="button branches__button">CÓMO LLEGAR</a>
+          <div class="branches__name">Sede Los Pinos <span>Calle las Garzas Edificio 1D Dpto 201</span></div>
+          <a href="https://goo.gl/maps/DvmT4UtgvEEvVLou5" class="button branches__button">CÓMO LLEGAR</a>
         </div>
         <div class="branches__item">
           <div class="branches__logo-container">
@@ -249,8 +249,8 @@
               <img src="assets/img/sedes.png" alt="Sede primavera">
             </div>
           </div>
-          <div class="branches__name">Sede Primavera <span>Av. Los pinos 345</span></div>
-          <a class="button branches__button">CÓMO LLEGAR</a>
+          <div class="branches__name">Sede Primavera <span>Calle Isaac Albeniz 431</span></div>
+          <a href="https://goo.gl/maps/qE6Qdv4Dxrxgd2yM7" class="button branches__button">CÓMO LLEGAR</a>
         </div>
         <div class="branches__item">
           <div class="branches__logo-container">
@@ -258,8 +258,8 @@
               <img src="assets/img/sedes.png" alt="Sede primavera">
             </div>
           </div>
-          <div class="branches__name">Sede Primavera <span>Av. Los pinos 345</span></div>
-          <a class="button branches__button">CÓMO LLEGAR</a>
+          <div class="branches__name">Sede Huanchaco <span>Av. Cerrito la Virgen cuadra 9</span></div>
+          <a href="https://goo.gl/maps/PTXJ7P4gBd2Tk8uVA" class="button branches__button">CÓMO LLEGAR</a>
         </div>
       </div>
     </div>
@@ -272,7 +272,7 @@
       <a href="#contacto" class="button call-to-action__button">AGENDAR CONSULTA AQUÍ</a>
     </div>
   </section>
-  <section class="section customer-stories">
+  <section id="customerStories" class="section customer-stories">
     <div id="testimonios" class="target"></div>
     <div class="title-container title-container--min customer-stories__title-container">
       <div class="title-container__end"></div>
@@ -317,7 +317,7 @@
     </div>
   </div>
 </section>
-<section class="section section--with-title contact-form">
+<section id="contactFormSection" class="section section--with-title contact-form">
   <div id="contacto" class="target"></div>
   <div class="section__column section__column--title">
     <div class="title-container title-container--min contact-form__title">
@@ -358,6 +358,10 @@
             <a href="tel:+51978882148">
               <span class="footer__icon"><i class="fas fa-phone-alt"></i></span>
               978 882 148
+            </a>
+            - 
+            <a href="tel:+51916445831">
+              916 445 831
             </a>
           </li>
           <li class="footer__list-item">
@@ -428,7 +432,7 @@
   </div>
   <div class="footer__copy">
     <div class="footer__copyright">&copy; 2021 Todos los derechos reservados.</div>
-    <div class="footer__credits">Desarrollado por Mapeo</div>
+    <div class="footer__credits">Desarrollado por <a target="_blank" href="https://web.mapeo.pe/">Mapeo</a>
   </div>
 </footer>
   </main>

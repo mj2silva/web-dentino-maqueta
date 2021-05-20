@@ -7,14 +7,14 @@
   overflow: hidden;
   width: 100%;
   &__message {
-    width: 70%;
+    width: 50%;
     text-align: center;
     font-size: 1.8rem;
     color: $cl-white;
   }
   &__action {
     min-width: 25%;
-    margin: 2rem 1rem;
+    margin: 2rem 0;
   }
   &__button {
     padding: .8rem 1rem;

@@ -57,6 +57,7 @@
     "defaults"
   ],
   "dependencies": {
-    "firebase": "^8.6.1"
+    "firebase": "^8.6.1",
+    "intersection-observer": "^0.12.0"
   }
 }
