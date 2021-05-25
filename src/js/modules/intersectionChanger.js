@@ -1,7 +1,6 @@
 const toggleLinkClassList = (entry, activeClassName, treshold = 0.25) => {
   const switchEntryClassName = (linkId) => {
     const link = document.getElementById(linkId);
-    console.log({ entry, link })
     if (entry.intersectionRatio >= treshold) link.classList.add(activeClassName);
     else link.classList.remove(activeClassName);
   }
