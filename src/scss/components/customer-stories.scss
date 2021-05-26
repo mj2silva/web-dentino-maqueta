@@ -1,3 +1,32 @@
+@keyframes center-to-right {
+  from {
+    transform: scale(1.2) translateX(-21rem);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+
+@keyframes left-to-center {
+  from {
+    transform: scale(1) translateX(-25rem);
+  }
+  to {
+    transform: scale(1.2) translateX(0);
+  }
+}
+
+@keyframes in {
+  from {
+    opacity: 0;
+    transform: translateX(-21rem);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0);
+  }
+}
+
 .customer-stories {
   display: flex;
   flex-direction: column;
@@ -16,24 +45,48 @@
     }
   }
   &__items {
+    position: relative;
     margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 75rem;
     margin-bottom: 1rem;
+    min-height: 18rem;
   }
   &__item {
     position: relative;
     min-width: 15rem;
     width: 15rem;
-    height: fit-content;
+    min-height: 12rem;
     padding: 1rem 3.5rem;
     margin: 2rem .5rem;
     background-color: $cl-aqua;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
+    justify-content: space-between;
+    transition-duration: 500ms;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &--active {
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      animation: left-to-center ease 1s forwards;
+    }
+    &--left {
+      position: absolute;
+      right: 0;
+      animation: center-to-right ease 1s forwards;
+    }
+    &--right {
+      position: absolute;
+      left: 0;
+      animation: in ease 1s forwards;
+    }
   }
   &__message {
     position: relative;
@@ -111,7 +164,11 @@
     height: .5rem;
     width: .5rem;
     margin: 0 .2rem;
+    cursor: pointer;
     &:hover {
+      background-color: $cl-blue;
+    }
+    &--active {
       background-color: $cl-blue;
     }
   }

@@ -57,19 +57,26 @@
   }
 
   &__image {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     margin: 2rem auto;
-    max-width: 65%;
-    width: 80%;
-    min-height: 20rem;
+    margin-left: -2rem;
+    margin-bottom: 0;
+    width: 50rem;
+    min-height: 34rem;
     padding: 2rem;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     object-fit: cover;
     object-position: center;
     @media screen and (max-width: $breakpoint-laptop) {
+      position: relative;
+      margin: 2rem auto;
       height: max-content;
+      min-height: 15rem;
+      margin-bottom: 0;
       max-width: 50%;
     }
     @media screen and (max-width: $breakpoint-tablet) {

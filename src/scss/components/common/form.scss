@@ -12,8 +12,10 @@
     margin: .5rem 0;
     box-sizing: border-box;
     font-size: 1.2rem;
+    font-family: $avenirDemi;
     &::placeholder {
-      font-family: $avenirPro ;
+      font-family: $avenirDemi;
+      font-weight: 100;
     }
   }
   &__button {
