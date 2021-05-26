@@ -164,7 +164,11 @@
     height: .5rem;
     width: .5rem;
     margin: 0 .2rem;
+    cursor: pointer;
     &:hover {
+      background-color: $cl-blue;
+    }
+    &--active {
       background-color: $cl-blue;
     }
   }

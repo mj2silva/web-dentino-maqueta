@@ -1,10 +1,11 @@
 .contact-form {
   background-color: $cl-gray;
   &__image {
-    width: 24rem;
+    width: 30rem;
+    margin-top: -5rem;
   }
   &__form {
-    width: 70%;
+    width: 80%;
     margin: 2rem auto;
   }
   &__title {
