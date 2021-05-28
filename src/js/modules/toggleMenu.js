@@ -7,7 +7,7 @@ const initToggleButton = ({
 } = {}) => {
   const openMenuButton = document.getElementById(openMenuId);
   const closeMenuButton = document.getElementById(closeMenuId);
-  const menu = document.getElementById(menuId)
+  const menu = document.getElementById(menuId);
 
   openMenuButton.addEventListener("click", (() => {
     menu.classList.remove(closedMenuClassName);
@@ -18,6 +18,13 @@ const initToggleButton = ({
     menu.classList.remove(openMenuClassName);
     menu.classList.add(closedMenuClassName);
   }));
+
+  window.addEventListener('popstate', () => {
+    if (menu.classList.contains(openMenuClassName)) {
+      menu.classList.remove(openMenuClassName);
+      menu.classList.add(closedMenuClassName);
+    }
+  });
 }
 
 export default initToggleButton;

@@ -82,7 +82,7 @@
       <div class="section__column">
         <div class="image about-us__image">
           <img src="assets/img/doc.png" alt="Imagen de presentación de Dentino">
-          <div class="about-us__owner-name">DR ALBERTÍN RÍOS</div>
+          <div class="about-us__owner-name">DR ALBERTIN RIOS</div>
         </div>
       </div>
       <div cla id="aboutUs"ss="section__column">
@@ -101,7 +101,7 @@
               edad.
             </p>
             <p>
-              Nuestro propósito es verte sonreir.
+              Nuestro propósito es verte sonreír.
             </p>
           </div>
           <div class="about-us__strengths">
@@ -269,7 +269,15 @@
       <h2>¡Que tu salud no espere más!</h2>
     </div>
     <div class="call-to-action__action">
-      <a href="#contacto" class="button call-to-action__button">AGENDAR CONSULTA AQUÍ</a>
+      <!-- Principio del widget de enlace de Calendly -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <button
+        class="button call-to-action__button"
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/dentinotrujillo/cita?month=2021-05'});return false;">
+        AGENDAR CONSULTA AQUÍ
+    </button>
+      <!-- Final del widget de enlace de Calendly -->
     </div>
   </section>
   <section id="customerStories" class="section customer-stories">
