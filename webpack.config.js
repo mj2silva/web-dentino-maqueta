@@ -92,6 +92,14 @@ module.exports = {
         }
       ]
     }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src', 'assets/icons'),
+          to: 'assets/icons',
+        }
+      ]
+    }),
     new CleanWebpackPlugin(),
   ],
   optimization: {
