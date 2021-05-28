@@ -73,6 +73,7 @@
     width: 10rem;
     height: calc(#{$headerHeight} * 0.55);
     position: relative;
+    display: block;
     & a:focus {
       outline: none;
     }
@@ -171,8 +172,8 @@
         padding: 1rem;
         z-index: 30;
         animation: fadeIn linear .3s;
+      }
     }
-  }
   }
   &__item {
     list-style: none;
@@ -181,6 +182,9 @@
     position: relative;
     padding: 1rem;
     font-size: 1.1rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 1.5rem;
+    }
     &--active a {
       color: $cl-skyblue;
     }

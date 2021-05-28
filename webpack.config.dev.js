@@ -91,6 +91,14 @@ module.exports = {
         }
       ]
     }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src', 'assets/icons'),
+          to: 'assets/icons',
+        }
+      ]
+    }),
   ],
   devServer: {
     contentBase: path.join(__dirname, DIST_FOLDER),

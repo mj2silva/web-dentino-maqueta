@@ -6,7 +6,7 @@ import Slider from "./modules/Slider";
 const stories = [
   {
     message: 'Feliz con la atención personalizada y extremos cuidados en mi tratamiento gracias al uso de los protocolos de bioseguridad en cada intervención clínica.',
-    author: 'Sebastian Martines'
+    author: 'Sebastian Martinez'
   },
   {
     message: 'Estoy muy satisfecha con el diagnóstico y tratamiento dental que llevo en Dentino, he vuelto a sonreír con mucha confianza.',

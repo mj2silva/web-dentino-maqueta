@@ -25,4 +25,11 @@
     border-radius: 30px;
     font-weight: bold;
   }
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__message {
+      & h2 {
+        margin-bottom: 0rem;
+      }
+    }
+  }
 }
