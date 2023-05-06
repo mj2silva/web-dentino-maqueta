@@ -1,4 +1,11 @@
 .section {
+  &-small {
+    display: flex;
+    height: auto;
+    min-height: 16rem;
+    justify-content: center;
+    align-items: center;
+  }
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -10,8 +17,7 @@
     grid-template-rows: minmax(auto, 10rem);
     grid-template-areas:
       "title title"
-      "column-1 column-2"
-    ;
+      "column-1 column-2";
   }
   &__column {
     position: relative;
@@ -47,6 +53,13 @@
       & .section__column:nth-child(3) {
         order: 2;
       }
+    }
+    &-small {
+      display: flex;
+      height: auto;
+      min-height: 16rem;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

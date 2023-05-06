@@ -14,4 +14,12 @@
   border-top: 20px solid $cl-skyblue;
   border-radius: 50%;
   animation: spin 1s ease infinite;
+  color: transparent;
+}
+
+.spinner-small {
+  width: 2rem;
+  height: 2rem;
+  border-width: 10px;
+  animation-duration: 2s;
 }
